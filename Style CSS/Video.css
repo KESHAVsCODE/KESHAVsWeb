@@ -4,17 +4,17 @@
     column-gap: 16px;
     row-gap: 40px;
 }
-@media(max-width: 610px){
+@media(max-width: 749px){
     .MainGrid{
         grid-template-columns: 1fr;
     }
 }
-@media(min-width: 611px) and (max-width: 910px){
+@media(min-width: 750px) and (max-width: 979px){
     .MainGrid{
         grid-template-columns: 1fr 1fr;
     }
 }
-@media(min-width: 911px) and (max-width: 1200px){
+@media(min-width: 980px) and (max-width: 1200px){
     .MainGrid{
         grid-template-columns: 1fr 1fr 1fr;
     }
