@@ -3,13 +3,42 @@
     top: 60px;
     bottom: 0;
     left: 0;
-    width: 72px;
+    width: 240px;
 
     z-index: 200;
 
     background-color: white;
 }
+.Scroll_Side_Bar{
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    overflow-y: scroll;
+}
+.Scroll_Side_Bar::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+.Scroll_Side_Bar:hover::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.45);
+}
 .sideBarElement{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    height: 40px;
+
+    cursor: pointer;
+    
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+
+    padding-left: 24px;
+    padding-right: 8px;
+}
+/* .sideBarElement{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,31 +47,22 @@
     font-family: Roboto, Arial;
     font-size: 10px;
     height: 74px;
-}
+} */
 .sideBarElement img{  /* we and do this like also */
     height: 24px;
+    margin-right: 24px;
 }
-/* .home,.explore,.subscriptions,.originals,.youtube-music,.library{
-    height: 24px;
-} */
+.sideBarElementName{
+    width: 144px;
+    line-height: 20px;
+}
 .sideBarElement:hover{
     background-color: rgba(0, 0, 0, 0.06);
 }
-.home{
-    
-}
-.explore{
-    
-}
-.subscriptions{
-    
-} 
-.originals{
-    
-}
-.youtube-music{
-    
-} 
-.library{
-    
+.subscriptions, .explore, .more-services{
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    color: rgb(80, 80, 80);
 }
